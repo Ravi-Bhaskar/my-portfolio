@@ -1,0 +1,105 @@
+.projects-section {
+    padding: 4rem 2rem;
+  }
+  
+  .projects-container {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .projects-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .projects-container h2 span {
+    background: linear-gradient(90deg, #6b8bff, #375de9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background: rgba(39, 66, 147, 0.322);
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 1rem;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  }
+  
+  /* Optional: Add hover effect */
+  .project-card img:hover {
+    transform: scale(1.03);
+    border: 2px solid #6b8bff;
+    box-shadow: 0 12px 36px rgba(107, 139, 255, 0.3);
+  }
+  
+  .project-content {
+    padding: 1.5rem;
+    text-align: left;
+  }
+  
+  .project-content h3 {
+    font-size: 1.5rem;
+    color: #fefefe;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-content p {
+    font-size: 1rem;
+    color: #d5d5d5;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tech-list li {
+    background: #eaeefc;
+    color: #375de9;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    border-radius: 5px;
+    list-style: none;
+  }
+  
+  .project-links a {
+    text-decoration: none;
+    margin-right: 1rem;
+    font-weight: 600;
+    color: #6b8bff;
+    border: 1.5px solid #6b8bff;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+  }
+  
+  .project-links a:hover {
+    background: #375de9;
+    color: #fff;
+  }
+  
